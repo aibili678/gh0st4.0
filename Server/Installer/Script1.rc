@@ -1,0 +1,163 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CPP
+//
+IDR_DLL                 ERROR     DISCARDABLE     "meng.dll"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Just Orange\0"
+            VALUE "FileDescription", "MSN Security Guard Install\0"
+            VALUE "FileVersion", "3.1.4.308\0"
+            VALUE "InternalName", "Install.exe\0"
+            VALUE "LegalCopyright", "Copyright (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Install.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MSN Security Guard Install\0"
+            VALUE "ProductVersion", "3.1.4.308\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+//IDI_ICON2               ICON    DISCARDABLE     "128.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Menu",                        65535
+    MENUITEM "复制",                        ID_PREVIEW_CLOSE
+    MENUITEM "黏贴",                        D_PREVIEW_NEXT
+    MENUITEM "全选",                        ID_PREVIEW_NUMPAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING1             "500\tInternet 连接向导\n501\t连接到 Internet\n502\tICWCONN1.EXE\n503\tInternet 连接向导尚未完成 Internet 连接设置。\n\t是否想关闭本向导?\n504\tOutlook Express\n505\tMSIMN.EXE\n506\t您已经选择不接受服务协议。\n\t\n\t请单击“确定”重新阅读服务协议，或单击“取消”退出 Internet 连接向导。\n507\t请输入所需的信息，然后单击“下一步”。\n508\tInternet 连接向导无法保存 Internet 连接信息。\n509\tInternet 连接向导无法自动关闭并重新启动您的计算机，请手工启动计算机。\n510\tInternet 连接向导将重新启动计算机。\n\t请关闭所有正在运行的程序，然后单击“确定”。 \n511\t重新启动计算机后，向导将继续运行。\n512\t要成功完成 Internet 连接向导，您必须登录到计算机。\n\t是否愿意重新启动 Windows 以便登录?\n513\t必须确保在单击“是”之前关闭正在运行的所有程序。\n\t请在计算机重新启动之后登录，向导将继续运行。\n514\tInternet 连接向导尚未完成 Internet 连接设置。\n\t是否想关闭本向导?\n550\t无法运行 Internet 连接向导。请再试一次。\n551\t内存不够，无法继续。请关闭部分应用程序，然后再试。\n552\ticwhelp.dll\n553\t无法注册或取消注册 Internet 连接向导帮助程序组件\n554\t无"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

